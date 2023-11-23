@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% block title %}User Statistics{% endblock %} {% block content
+    %}
+    <form method="POST">
+    <br><br>
+    <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <br>
+                <p class="mb-0">Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class=""></p>
+                <input class="form-control text-muted mb-0" id="name" name="name"  type="text" placeholder={{fname}}>
+              </div>
+            </div>
+            </div>
+            <hr>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <br>
+                  <p class="mb-0">Height (cm)</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class=""></p>
+                  <input id="height" name="height" class="form-control text-muted mb-0" type="text" placeholder={{height}}>
+                </div>
+              </div>
+              </div>
+              <hr>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <br>
+                    <p class="mb-0">Weight (kg)</p>
+                  </div>
+                  <div class="col-sm-9">
+                    <p class=""></p>
+                    <input class="form-control text-muted mb-0" id="weight" name="weight" type="text" placeholder={{weight}}>
+                  </div>
+                </div>
+                </div>
+                <hr>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <br>
+                    <p class="mb-0">DOB (YYYY-MM-DD)</p>
+                  </div>
+                  <div class="col-sm-9">
+                    <p class=""></p>
+                    <input class="form-control text-muted mb-0" id="dob" name="dob" type="text" placeholder={{dob}}>
+                  </div>
+                </div>
+                </div>
+                <hr>
+                <button class="btn btn-primary">Submit</button>      
+          </div>
+        </div>
+      </form>
+      <br>
+
+      <a class="nav-item nav-link" id="logout" href="/delete_account"><button type="button" class="btn btn-danger">Delete the user account</button></a>
+    {% endblock %}
+    

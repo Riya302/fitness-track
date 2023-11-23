@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 align="center">Enter SQL Queries</h1>
+<form method="POST">
+  <textarea name="note" id="note" class="form-control"></textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Execute SQL query</button>
+  </div>
+</form>
+<br>
+<table class="table table-dark">
+<tbody>
+{%for i in table%}
+<tr>
+{%for j in i%}
+<td>{{j}}</td>
+{% endfor %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}
